@@ -10,10 +10,12 @@ lang: es-ES
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Europe/Madrid
+timezone: Europe/Madrid
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
+title: Multivac's Website # the main title
 title: Multivac's Website # the main title
 
 tagline: El blog de Mario # it will display as the sub-title
@@ -27,7 +29,10 @@ url: "https://multivacs.com"
 
 github:
   username: multivacs # change to your github username
+  username: multivacs # change to your github username
 
+#twitter:
+#  username: twitter_username # change to your twitter username
 #twitter:
 #  username: twitter_username # change to your twitter username
 
@@ -38,6 +43,8 @@ social:
   #email: # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    #- https://twitter.com/username # change to your twitter homepage
+    - https://github.com/multivacs # change to your github homepage
     #- https://twitter.com/username # change to your twitter homepage
     - https://github.com/multivacs # change to your github homepage
     # Uncomment below to add more social links

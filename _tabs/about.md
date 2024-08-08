@@ -1,8 +1,13 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+
+Me llamo Mario y soy graduado en **Ingeniería Informática**, por la rama de Computación.  
+Actualmente trabajando como DevOps y Data Engineer.
+
+Suelo trastear con pequeños proyectos en casa, relacionados principalmente con la seguridad y la privacidad, pero también con la parte de servicios: NAS, domótica, homelab, etc.
+
+El objetivo de esta web es el de seguir aprendiendo y mostrar mi proceso por si le puede servir a alguien.

@@ -169,10 +169,10 @@ Este estudio demuestra el potencial de las redes neuronales avanzadas para la pr
 
 6. **Arik, S. O. and Pfister, T. (2021).** Tabnet: Attentive interpretable tabular learning. In Proceedings of the AAAI Conference on Artificial Intelligence, volume 35, pages 6679–6687.
 
-7. ** Huang, X., Khetan, A., Cvitkovic, M., and Karnin, Z. (2020).** TabTransformer: Tabular data modeling using contextual embeddings. [Arxiv](http://arxiv.org/abs/2012.06678).
+7. ** Huang, X., Khetan, A., Cvitkovic, M., and Karnin, Z. (2020).** TabTransformer: Tabular data modeling using contextual embeddings. [Arxiv](https://arxiv.org/abs/2012.06678).
 
 8. **Owen, S. (2021).** Use hyperopt optimally with spark and MLflow to build your best model. [Databricks](https://www.databricks.com/blog/2021/04/15/how-not-to-tune-your-model-with-hyperopt.html).
 
-9. **Popov, S., Morozov, S., and Babenko, A. (2019).** Neural oblivious decision ensembles for deep learning on tabular data. [Arxiv](http://arxiv.org/abs/1909.06312).
+9. **Popov, S., Morozov, S., and Babenko, A. (2019).** Neural oblivious decision ensembles for deep learning on tabular data. [Arxiv](https://arxiv.org/abs/1909.06312).
 
 10. **Villanueva, M. (2021).** Convolutional neural networks on tabular datasets (part 1). [Medium](https://medium.com/spikelab/convolutional-neural-networks-on-tabular-datasets-part-1-4abdd67795b6).

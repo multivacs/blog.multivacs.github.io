@@ -3,8 +3,8 @@ title: Prediciendo el Riesgo de fuga de Empleados con Machine Learning
 description: Sistema que usando Machine Learning con algoritmos de árboles de decisión, calcula la probabilidad de que un empleado abandone la compañía.
 author: mario
 date: 2024-03-25 11:33:00 +0000
-categories: [Data Science, Machine Learning]
-tags: [machine learning, data science, tableau, python, riesgo, predictivos]
+categories: [Tecnología y Programación, Ciencia de datos]
+tags: [machine learning, tableau, python, riesgo, predicción]
 pin: false
 math: false
 mermaid: false

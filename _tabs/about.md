@@ -1,13 +1,12 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 5
+order: 4
 ---
 
 
-Me llamo Mario y soy graduado en **Ingeniería Informática**, por la rama de Computación.  
-Actualmente trabajando como DevOps y Data Engineer.
+Mi nombre es Mario, y soy ingeniero informático, actualmente, en proceso de terminar el máster en Ciencia de datos.
 
-Suelo trastear con pequeños proyectos en casa, relacionados principalmente con la seguridad y la privacidad, pero también con la parte de servicios: NAS, domótica, homelab, etc.
+El objetivo del blog es compartir y tener una excusa para explorar diversos tópicos dentro de la ciencia de datos aplicada: desde tecnología y matemáticas hasta cómo se puede y se está utilizando la IA en la industria.
 
-El objetivo de esta web es el de seguir aprendiendo y mostrar mi proceso por si le puede servir a alguien.
+Si te gusta el contenido, compártelo con quien consideres, para cualquier duda o sugerencia, puedes contactar conmigo a través de [LinkedIn](https://www.linkedin.com/in/mario-calpena/) o en mi canal de YouTube.

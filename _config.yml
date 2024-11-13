@@ -10,18 +10,16 @@ lang: es-ES
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Europe/Madrid
-timezone: Europe/Madrid
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Multivac's Website # the main title
-title: Multivac's Website # the main title
+title: Multivac Data # the main title
 
-tagline: El blog de Mario # it will display as the sub-title
+tagline: De datos y lo que surja # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Un sitio donde dejar mis proyectos y lo que voy aprendiendo por el camino.
+  Blog dedicado a la ciencia de datos y la tecnología aplicada a diversos campos como la industria, los videojuegos o la física; y cómo poner el poder de los datos a nuestra disposición.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -29,10 +27,7 @@ url: "https://multivacs.com"
 
 github:
   username: multivacs # change to your github username
-  username: multivacs # change to your github username
 
-#twitter:
-#  username: twitter_username # change to your twitter username
 #twitter:
 #  username: twitter_username # change to your twitter username
 
@@ -43,13 +38,8 @@ social:
   #email: # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    #- https://twitter.com/username # change to your twitter homepage
-    - https://github.com/multivacs # change to your github homepage
-    #- https://twitter.com/username # change to your twitter homepage
-    - https://github.com/multivacs # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
     - https://www.linkedin.com/in/mario-calpena/
+    - https://github.com/multivacs
 
 # Site Verification Settings
 webmaster_verifications:
@@ -103,7 +93,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/common/avatar.jpeg
+avatar: /assets/img/common/multivac.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

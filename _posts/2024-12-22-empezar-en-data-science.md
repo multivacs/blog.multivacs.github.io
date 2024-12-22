@@ -28,13 +28,13 @@ image:
 
 ## 1. Introducción
 
-Cuando uno se aventura a introducirse en el mundo de la ciencia de datos, el machine learning y la ola de la revolución 4.0, se encuentra en un mar de decisiones y no sabe realmente por dónde empezar, algunos recomiendan bootcamps, otros lanzarse directamente a programar.  
-Aunque todas las opciones son válidas, lo cierto es que este primer paso puede ser abrumador, incluso si ya se viene con cierta preparación previa. Es por eso que he decidido recopilar aquellos conceptos que considero importantes y que me han servido para entender mejor lo que subyace a estas tecnologías, y cómo explotarlas para nuestro beneficio.
+Cuando uno se aventura a introducirse en el mundo de la ciencia de datos, el machine learning y la ola de la revolución 4.0; se encuentra en un mar de decisiones y no sabe realmente por dónde empezar. Algunos recomiendan bootcamps, otros lanzarse directamente a programar.  
+Aunque todas las opciones son válidas, lo cierto es que este primer paso puede ser abrumador, incluso si ya se viene con cierta preparación previa. Es por eso que he decidido recopilar aquellos conceptos que considero importantes y que me han servido para entender mejor lo que subyace a estas tecnologías, para explotarlas en nuestro beneficio.
 
 
 ## 2. Matemáticas
 
-Por mucho que pueda doler a muchos, nadie dijo que el camino fuese a ser sencillo. Para poder convertirse en un buen científico de datos, es necesario cierta soltura en las operaciones que vamos a utilizar.
+Nadie dijo que el camino fuese a ser sencillo. Para poder convertirse en un buen científico de datos, es necesario tener cierta soltura en las operaciones matemáticas que vamos a utilizar.
 
 ![Mates](assets/img/posts/2024-12-22-empezar-en-data-science/mates.jpg){: width="434" height="405" }
 
@@ -44,18 +44,18 @@ Las matemáticas nos ayudan a:
 - nos permitirá ajustar los modelos a los requerimientos del problema (hyperparameters tuning, funciones de pérdida)
 - escoger el modelo apropiado y qué métricas de evaluación son más adecuadas
 
-En definitiva, nos ayuda a escoger EL modelo que el problema necesita, y sobretodo, hacerlo con fundamento, algo crucial cuando haya que defender tu decisión frente a un equipo, clientes o stakeholders.
+En definitiva, **nos ayudan a escoger EL modelo que el problema necesita**, y sobretodo, hacerlo con fundamento, algo crucial cuando haya que defender tu decisión frente a un equipo, clientes o stakeholders.
  
 
 ### 2.1. Álgebra lineal
 
-El álgebra lineal recoje el área de conocimiento de las matemáticas relacionada con los vectores, las matrices y las transformaciones lineales; fundamentales para la representación, almacenamiento y eficiencia de los datos que vamos a utilizar.
+El álgebra lineal recoje el área de conocimiento de las matemáticas relacionada con los vectores, las matrices y las transformaciones lineales; fundamentales para la representación, almacenamiento y eficiencia de los datos.
 
 
 ### 2.2. Estadística
 
 Nos permite cuantificar cómo de probable es que una serie de eventos vayan o no a suceder.  
-Conceptos como medias muestrales, medianas, varianza, cuartiles y desviación estándar son esenciales para realizar el análisis exploratorio de los datos y su tendencia. Así como para evaluar correctamente los modelos y poder elegir entre varios candidatos qué modelo obtiene los mejores resultados.
+Conceptos como medias muestrales, medianas, varianza, cuartiles y desviación estándar son esenciales para realizar el análisis exploratorio de los datos y su tendencia. Así como para evaluar correctamente los modelos y poder elegir de entre varios candidatos, qué modelo obtiene los mejores resultados.
 
 
 ### 2.3. Cálculo

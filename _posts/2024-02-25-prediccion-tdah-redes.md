@@ -2,7 +2,7 @@
 title: Predicción de TDAH con redes neuronales
 description: Estudio de arquitecturas de redes neuronales recientes para datos tabulares, y compararlos en el ámbito del diagnóstico de TDAH.
 author: mario
-date: 2024-02-25 11:33:00 +0000
+date: 2024-02-25 11:33:00 +0100
 categories: [Tecnología y Programación, Ciencia de datos]
 tags: [redes neuronales, python, keras, datos estructurados]
 pin: false

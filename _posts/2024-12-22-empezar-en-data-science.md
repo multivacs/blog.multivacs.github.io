@@ -14,25 +14,25 @@ image:
 ---
 
 
-- [Introducción](#introducción)
-- [Matemáticas](#matemáticas)
-  - [Álgebra lineal](#álgebra-lineal)
-  - [Estadística](#estadística)
-  - [Cálculo](#cálculo)
-- [Fundamentos del Machine Learning](#fundamentos-del-machine-learning)
-- [Lenguajes de Programación](#lenguajes-de-programación)
-- [Apuntes finales](#apuntes-finales)
-- [Recursos adicionales](#recursos-adicionales)
+- [1. Introducción](#1-introducción)
+- [2. Matemáticas](#2-matemáticas)
+  - [2.1. Álgebra lineal](#21-álgebra-lineal)
+  - [2.2. Estadística](#22-estadística)
+  - [2.3. Cálculo](#23-cálculo)
+- [3. Fundamentos del Machine Learning](#3-fundamentos-del-machine-learning)
+- [4. Lenguajes de Programación](#4-lenguajes-de-programación)
+- [5. Apuntes finales](#5-apuntes-finales)
+- [6. Recursos adicionales](#6-recursos-adicionales)
 
 
 
-## Introducción
+## 1. Introducción
 
 Cuando uno se aventura a introducirse en el mundo de la ciencia de datos, el machine learning y la ola de la revolución 4.0, se encuentra en un mar de decisiones y no sabe realmente por dónde empezar, algunos recomiendan bootcamps, otros lanzarse directamente a programar.  
 Aunque todas las opciones son válidas, lo cierto es que este primer paso puede ser abrumador, incluso si ya se viene con cierta preparación previa. Es por eso que he decidido recopilar aquellos conceptos que considero importantes y que me han servido para entender mejor lo que subyace a estas tecnologías, y cómo explotarlas para nuestro beneficio.
 
 
-## Matemáticas
+## 2. Matemáticas
 
 Por mucho que pueda doler a muchos, nadie dijo que el camino fuese a ser sencillo. Para poder convertirse en un buen científico de datos, es necesario cierta soltura en las operaciones que vamos a utilizar.
 
@@ -47,25 +47,25 @@ Las matemáticas nos ayudan a:
 En definitiva, nos ayuda a escoger EL modelo que el problema necesita, y sobretodo, hacerlo con fundamento, algo crucial cuando haya que defender tu decisión frente a un equipo, clientes o stakeholders.
  
 
-### Álgebra lineal
+### 2.1. Álgebra lineal
 
 El álgebra lineal recoje el área de conocimiento de las matemáticas relacionada con los vectores, las matrices y las transformaciones lineales; fundamentales para la representación, almacenamiento y eficiencia de los datos que vamos a utilizar.
 
 
-### Estadística
+### 2.2. Estadística
 
 Nos permite cuantificar cómo de probable es que una serie de eventos vayan o no a suceder.  
 Conceptos como medias muestrales, medianas, varianza, cuartiles y desviación estándar son esenciales para realizar el análisis exploratorio de los datos y su tendencia. Así como para evaluar correctamente los modelos y poder elegir entre varios candidatos qué modelo obtiene los mejores resultados.
 
 
-### Cálculo
+### 2.3. Cálculo
 
 El cálculo es la piedra fundamental sobre la que se sustenta el Machine Learning, sin él, no existirían los algoritmos de optimización como el descenso por gradiente. Los modelos se encontrarían literalmente ciegos en el espacio y no tendrían manera de determinar hacia qué dirección (pesos) debería de dirigirse a continuación para minimizar el error.  
 Debemos ser conscientes y habilidosos en el cálculo diferencial y su intuición lógica, para poder entender cómo funcionan las redes neuronales.
 
 
 
-## Fundamentos del Machine Learning
+## 3. Fundamentos del Machine Learning
 
 En esencia, Machine Learning es coger todos los conceptos matemáticos previos y aplicarlos.  
 Por eso es importante tener una base sólida previa en matemáticas, para poder entender el funcionamiento interno del aprendizaje automático. Estos fundamentos son importantes para poder construir modelos de ML robustos.
@@ -92,7 +92,7 @@ Los pasos para aplicar correctamente estos modelos son:
 - Evalúar el modelo
 
 
-## Lenguajes de Programación
+## 4. Lenguajes de Programación
 
 Ser habilidoso en lenguajes de programación como Python o R es indispensable para poder llevar a cabo proyectos de Data Science.
 Estas son las herramientas que utilizaremos para llevar a cabo nuestros análisis y sacar los `insights` de los datos.
@@ -109,7 +109,7 @@ Para avanzar en este mundillo, también tendremos que tener en consideración ap
 Por otro lado, **la mayor parte de la información en las empresas, se encuentra en bases de datos relacionales**, por tanto, también necesitaremos aprender SQL para nuestros proyectos, no necesitamos ser unos completos expertos, nuestro objetivo es utilizarlo de manera fluida, no competir con un administrador de bases de datos. Debemos de ser capaces de extraer, analizar y organizar la información en las primeras fases.
 
 
-## Apuntes finales
+## 5. Apuntes finales
 
 Aunque esta entrada se lea de manera lineal, no significa que para poder aprender programación tengas que pasar todas las fases anteriores, aunque sí es recomendable poder contar con una base sólida en algunos conceptos antes de meterte de cabeza en puntos más complejos, ya que como explicaba, el hecho de seguir esta metodología te permitirá aprender nuevos conceptos consolidando los que ya has obtenido en pasos anteriores.
 
@@ -120,7 +120,7 @@ De esta manera, **conseguirás aprender los conceptos teóricos a la vez que los
 Sobretodo, tener en cuenta que este camino es un proceso que puede alargarse todo lo que quieras, y que realmente nunca termina, por tanto, disfruta del camino.
 
 
-## Recursos adicionales
+## 6. Recursos adicionales
 
 Si quieres ampliar contenido, te recomiendo que sigas los siguientes canales enfocados a la ciencia de datos que te ayudarán a adentrarte en este mundo:
 - La revista de [Towards Data Science](https://towardsdatascience.com/) con artículos de actualidad muy interesantes.

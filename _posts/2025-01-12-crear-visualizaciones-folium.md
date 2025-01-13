@@ -51,7 +51,7 @@ Sobre cómo instalar un entorno de desarrollo con `conda` y cómo configurarlo, 
 
 ## 3. Crear un mapa básico
 
-Primero, para crear un mapa deberemos de importar la librería e indicarle una posición inicial en coordenadas ([latitud, longitud]) y si queremos podemos ajustar un zoom inicial.  
+Primero, para crear un mapa deberemos de importar la librería e indicarle una posición inicial en coordenadas ([latitud, longitud]) y un zoom inicial.  
 Luego podremos movernos sobre el mapa, pero por ahora, pongamos que queremos centrar el mapa en la ciudad de Madrid:
 
 ```python
@@ -70,7 +70,7 @@ Vamos a añadir información relativa a los distritos de Madrid. Este método es
 
 Para el ejemplo, utilizaremos el siguiente archivo GeoJson que podréis encontrar en la web [The Metabolism of Cities](https://data.metabolismofcities.org/library/maps/35568/view/)
 
-Para posteriormente poder añadir más información, en vez de añadirlos directamente sobre el mapa, lo que haremos será crear una capa GeoJson, que posteriormente aparecerá en el lado derecho superior del mapa, y que nos permitirá ocultar o mostrar la información de los distritos.
+En vez de añadirlos directamente sobre el mapa, lo que haremos será crear una capa GeoJson, que aparecerá en el lado derecho superior del mapa, y que nos permitirá ocultar o mostrar la información de los distritos.
 
 ```python
 import json
@@ -170,13 +170,13 @@ _Mapa de calor_
 
 ## Ejemplo interactivo
 
-En este mapa de ejemplo hemos creado un mapa de la ciudad de Madrid, indicando mediante clústers de marcadores los alojamientos y restaurantes, y añadiendo mediante un pequeño popup información de horarios o teléfono.
+En este mapa de ejemplo hemos creado un mapa de la ciudad de Madrid, indicando mediante clústers de marcadores los alojamientos y restaurantes, y añadiendo mediante un pequeño popup información de horarios, teléfono, etc.
 
 Los datos se han obtenido directamente de la web de 'datos.gob.es', en:
 - [Alojamientos](https://datos.gob.es/en/catalogo/l01280796-alojamientos-de-la-ciudad-de-madrid-www-esmadrid-com)
 - [Restaurantes](https://datos.gob.es/en/catalogo/l01280796-restaurantes-con-perfil-turistico-de-la-ciudad-de-madrid-www-esmadrid-com)
 
-Dado que los datos se encuentran en XML, deberemos de parsearlos y transformarlos en dataframes.  
+Dado que los datos se encuentran en XML, deberemos de parsearlos y transformarlos en datatables.  
 El código podéis encontrarlo en [GitHub](https://github.com/multivacs/madrid-map-restauracion).
 
 

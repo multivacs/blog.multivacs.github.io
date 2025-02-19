@@ -3,7 +3,7 @@ title: Predicción de TDAH con redes neuronales
 description: Estudio de arquitecturas de redes neuronales recientes para datos tabulares, y compararlos en el ámbito del diagnóstico de TDAH.
 author: mario
 date: 2024-02-25 11:33:00 +0100
-categories: [Tecnología y Programación, Ciencia de datos]
+categories: [Tecnología y Programación, Redes Neuronales]
 tags: [redes neuronales, python, keras, datos estructurados]
 pin: false
 math: true
@@ -169,7 +169,7 @@ Este estudio demuestra el potencial de las redes neuronales avanzadas para la pr
 
 6. **Arik, S. O. and Pfister, T. (2021).** Tabnet: Attentive interpretable tabular learning. In Proceedings of the AAAI Conference on Artificial Intelligence, volume 35, pages 6679–6687.
 
-7. ** Huang, X., Khetan, A., Cvitkovic, M., and Karnin, Z. (2020).** TabTransformer: Tabular data modeling using contextual embeddings. [Arxiv](https://arxiv.org/abs/2012.06678).
+7. **Huang, X., Khetan, A., Cvitkovic, M., and Karnin, Z. (2020).** TabTransformer: Tabular data modeling using contextual embeddings. [Arxiv](https://arxiv.org/abs/2012.06678).
 
 8. **Owen, S. (2021).** Use hyperopt optimally with spark and MLflow to build your best model. [Databricks](https://www.databricks.com/blog/2021/04/15/how-not-to-tune-your-model-with-hyperopt.html).
 

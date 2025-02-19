@@ -5,7 +5,7 @@ author: mario
 date: 2024-12-22 20:30:00 +0100
 categories: [Tecnología y Programación, Ciencia de datos]
 tags: [introducción, empezar, data science]
-pin: true
+pin: false
 math: false
 mermaid: false
 image:

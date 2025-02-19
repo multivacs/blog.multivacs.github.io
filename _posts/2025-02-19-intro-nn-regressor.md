@@ -83,7 +83,7 @@ Vamos a deducir esta función de pérdida por nosotros mismos, para entender la 
 
 Queremos una función que nos dé una puntuación de cómo de parecidos son la observación dada y el valor real, y a esta función la denominamos "**estimación de máxima versolimilitud condicional**" o _conditional maximum likelihood estimation_ en inglés.
 
-Aplicado a una única observación, queremos aprender los pesos que maximicen la probabilidad de acertar con la predicción $p(y\|x)$. Dado que hay únicamente dos posibles casos (1 o 0), esto se traduce una distribución de Bernoulli:
+Aplicado a una única observación, queremos aprender los pesos que maximicen la probabilidad de acertar con la predicción $p(y\|x)$. Dado que hay únicamente dos posibles casos (1 o 0), esto se traduce en una distribución de Bernoulli:
 
 $$ p(y|x) = \hat{y}^y (1-\hat{y})^{(1-y)} $$
 
@@ -112,7 +112,7 @@ La pérdida es mayor, lo que indica que la red está cometiendo un error grande 
 
 
 ## 4. Ejemplo práctico en Python
-Enhorabuena, ya eres todo un experto en regresores logísticos, así que por qué no ponemos bajamos a tierra y ponemos todo esto en práctica.
+Enhorabuena, ya eres todo un experto en regresores logísticos, así que por qué no bajamos a tierra y ponemos todo esto en práctica.
 
 Para este ejemplo en Python, vamos a crear un regresor logístico sencillo que sea capaz de aprender a diferenciar entre dos clases (0 o 1), dado una entrada $x$. Usando todos los conceptos vistos más arriba.
 

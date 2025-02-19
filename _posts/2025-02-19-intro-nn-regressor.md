@@ -139,7 +139,7 @@ La salida $y$ para cada entrada $x$ será un vector de longitud $K$ (número de 
 
 
 ## 6. Conclusión
-Para finalizar, espero que hayas podido comprender los fundamentos de la regresión logística, desde su intuición matemática hasta su implementación, y sobretodo, que te haya servido para empezar a ver cómo funcionan las redes neuronales en su implementación más básica, y en la que seguiremos explorando en siguientes entradas.
+Para finalizar, espero que hayas podido comprender los fundamentos de la regresión logística, desde su intuición matemática hasta su implementación, y sobretodo, que te haya servido para empezar a ver cómo funcionan las redes neuronales en su versión más básica, y en la que seguiremos explorando en próximas entradas.
 
 
 ## Referencias

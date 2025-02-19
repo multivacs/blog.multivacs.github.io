@@ -32,7 +32,7 @@ En esta primera parte, introduciremos un concepto básico para poder entender la
 
 
 ## 2. Regresión Binaria
-El objetivo de la regresión binaria o logística es entrenar un clasificador que sea capaz de distinguir entre dos clases, a partir de nuevas entradas; y construir lo que denominamos la _frontera de decisión (decision boundary)_.
+El objetivo de la regresión binaria o logística es entrenar un **clasificador que sea capaz de distinguir entre dos clases**, a partir de nuevas entradas; y construir lo que denominamos la _frontera de decisión (decision boundary)_.
 Es decir, queremos saber la probabilidad de que dada una entrada $x$, la salida $y$ que obtengamos sea 1, $P(y=1 \| x)$.
 
 La regresión logística resuelve este problema aprendiendo a partir de un conjunto de datos, que denominaremos de entrenamiento, un vector de pesos $w$ y un sesgo $b$. Cada peso $w_i$ es un número real asociada a cada una de las características _(features)_ o columnas de entradas $x_i$.
@@ -41,14 +41,14 @@ $$ z = (\sum_{i=1}^n w_i x_i) + b $$
 
 El cómo aprende estos pesos lo veremos en el apartado 3.
 
-Para entender la intuición matemática de esto, deberemos recordar que cualquier función lineal puede expresarse mediante la fórmula: $y = mx + b$; donde $m$ es la pendiente y $b$ el punto que pasa por el origen.
+Para entender su intuición matemática, deberemos recordar que cualquier función lineal puede expresarse mediante la fórmula: $y = mx + b$; donde $m$ es la pendiente y $b$ el punto que pasa por el origen.
 
 ![Figura 1](assets/img/posts/2025-02-19-intro-nn-regressor/figura_1_lineal.png)
 _Figura 1: Función lineal de Magister Mathematicae - Trabajo propio, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=34887966_
 
-Aquí el sumatorio hace referencia a que la operación $wx$ se trata del producto escalar de ambos vectores, que viene a ser la suma de los productos componente a componente.
+Aquí el sumatorio hace referencia a que la operación $wx$ se trata del **producto escalar de ambos vectores**, es decir, la suma de los productos componente a componente.
 
-Sin embargo, con esto no es suficiente, y es que esta función toma valores en el rango $(-\infty, \infty)$, y para poder hacerla una probabilidad, necesitamos pasar $z$ a través de la función sigmoide (o logística):
+Sin embargo, con esto no es suficiente, y es que esta función toma valores en el rango $(-\infty, \infty)$, y para poder hacerla una probabilidad, necesitamos pasar $z$ a través de la **función sigmoide (o logística)**:
 
 $$ \sigma(z) = \frac{1}{1+e^{-z}} $$
 
@@ -64,12 +64,12 @@ Decimos que una entrada pertenece a una clase si la probabilidad de pertenecer a
 ## 3. Entrenamiento y Entropía
 Llegados a este punto, te estarás preguntando, ¿cómo es que el modelo es capaz de aprender estos valores de $w$ y $b$ por sí solo?
 
-Regresión logística es un modelo de aprendizaje supervisado, en el que conocemos la respuesta correcta $y_i$ (1 o 0) para cada observación $x_i$.
+Regresión logística es un **modelo de aprendizaje supervisado**, en el que conocemos la respuesta correcta $y_i$ (1 o 0) para cada observación $x_i$.
 
 El objetivo es aprender los parámetros $w$ y $b$ para obtener $\hat{y}$ (predicción) lo más cercana al valor verdadero $y$. Para hacerlo posible necesitamos:
 
-- Una función de pérdida, que nos diga cómo de cerca o lejos está nuestra observación del valor real.
-- Un algoritmo de optimización, el cual de manera iterativa, actualice los valores de los parámetros para minimizar esta función de pérdida. El algoritmo estándar para esto es el denominado _descenso por gradiente estocaisco_ o SGD (por sus siglas en inglés).
+- Una **función de pérdida**, que nos diga cómo de cerca o lejos está nuestra observación del valor real.
+- Un **algoritmo de optimización**, el cual de manera iterativa, actualice los valores de los parámetros para minimizar esta función de pérdida. El algoritmo estándar para esto es el denominado _descenso por gradiente estocaisco_ o SGD (por sus siglas en inglés).
 
 
 Sin entrar en mucho detalle para el algoritmo de optimización, ya que merece una entrada aparte, digamos que es un método que nos permite dada una función de error o coste, con una entrada $w$, encontrar el punto en el que se minimiza la función, es decir, donde el error (diferencia entre $y$ e $\hat{y}$) es mínimo.
@@ -81,7 +81,7 @@ _Figura 2: Algoritmo de optimización_
 ### 3.1 Función de pérdida (Entropía cruzada)
 Vamos a deducir esta función de pérdida por nosotros mismos, para entender la lógica detrás.
 
-Queremos una función que nos dé una puntuación de cómo de parecidos son la observación dada y el valor real, y a esta función la denominamos "estimación de máxima versolimilitud condicional" o _conditional maximum likelihood estimation_ en inglés.
+Queremos una función que nos dé una puntuación de cómo de parecidos son la observación dada y el valor real, y a esta función la denominamos "**estimación de máxima versolimilitud condicional**" o _conditional maximum likelihood estimation_ en inglés.
 
 Aplicado a una única observación, queremos aprender los pesos que maximicen la probabilidad de acertar con la predicción $p(y\|x)$. Dado que hay únicamente dos posibles casos (1 o 0), esto se traduce una distribución de Bernoulli:
 
@@ -97,16 +97,14 @@ $$ L_{CE} = -\log p(y|x) = -[y \log{\hat{y}} + (1-y) \log(1- \hat{y})] $$
 
 Por poner un ejemplo, supongamos que estamos clasificando si una imagen contiene un perro $(y = 1)$ o no $(y = 0)$.
 
-**Caso correcto**
-
+**Caso correcto**  
 Si la red predice correctamente que hay un perro con alta confianza ($\hat{y} = 0.9$):
 $$ L_{CE} = -[1 \log{0.9} + (1-1) \log(1- 0.9)] = - \log 0.9 = 0.105 $$
 
 La pérdida es pequeña, lo que indica que la predicción es buena.
 
 
-**Caso incorrecto**
-
+**Caso incorrecto**  
 Si la red se equivoca y dice que la probabilidad de que haya un perro es baja ($\hat{y}=0.1$):
 $$ L_{CE} = -\log 0.1 = 2.3 $$
 
@@ -123,13 +121,13 @@ _Figura 3: Visualización de la frontera de decisión_
 
 Se asume cierto conocimiento de Python y la librería pytorch para este ejemplo, aunque si estás muy verde en esto, no pasa nada, el notebook contiene anotaciones en texto para que puedas seguir la lógica del mismo.
 
-Algo que no hemos mencionado en los conceptos de arriba, es que en la práctica, aunque se puede hacer, se suelen evitar los bucles para realizar los cálculos, en su lugar, se empaquetan las operaciones en vectores y matrices que se lanzan de una vez para aprovechar el poder de paralelismo de las GPUs. En este ejemplo sencillo, no vamos a notar diferencia alguna, pero cuando vayamos a utilizar datasets de cientos de miles de registros, y matrices de pesos de miles de parámetros, será algo indispensable.
+Algo que no hemos mencionado en los conceptos de arriba, es que en la práctica, aunque se puede hacer, se suelen evitar los bucles para realizar los cálculos, en su lugar, **se empaquetan las operaciones en vectores y matrices que se lanzan de una vez para aprovechar el poder de paralelismo** de las GPUs. En este ejemplo sencillo, no vamos a notar diferencia alguna, pero cuando vayamos a utilizar datasets de cientos de miles de registros, y matrices de pesos de miles de parámetros, será algo indispensable.
 
 Puedes encontrar el notebook del ejemplo aquí: [Open In Colab](https://colab.research.google.com/github/multivacs/intro-nn/blob/main/notebooks/1_regresor.ipynb)
 
 
 ## 5. Regresión Multinomial
-Como punto extra, vamos a explicar qué pasa cuando queremos hacer regresión sobre más de dos clases. En este caso, utilizamos la regresión logística multinomial, también llamada _regresión softmax_.
+Como punto extra, vamos a explicar qué pasa cuando queremos hacer **regresión sobre más de dos clases**. En este caso, utilizamos la regresión logística multinomial, también llamada _regresión softmax_.
 
 La regresión multinomial utiliza otra función denominada _softmax_, la cual toma un vector $z = [z_1, z_2,..., z_K]$ de K posibles clases, y le asigna a cada elemento un valor entre 0 y 1, dando como resultado un vector cuya suma de sus elementos da siempre 1.
 

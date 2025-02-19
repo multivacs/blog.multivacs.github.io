@@ -69,7 +69,7 @@ Regresión logística es un **modelo de aprendizaje supervisado**, en el que con
 El objetivo es aprender los parámetros $w$ y $b$ para obtener $\hat{y}$ (predicción) lo más cercana al valor verdadero $y$. Para hacerlo posible necesitamos:
 
 - Una **función de pérdida**, que nos diga cómo de cerca o lejos está nuestra observación del valor real.
-- Un **algoritmo de optimización**, el cual de manera iterativa, actualice los valores de los parámetros para minimizar esta función de pérdida. El algoritmo estándar para esto es el denominado _descenso por gradiente estocaisco_ o SGD (por sus siglas en inglés).
+- Un **algoritmo de optimización**, el cual de manera iterativa, actualice los valores de los parámetros para minimizar esta función de pérdida. El algoritmo estándar para esto es el denominado _descenso por gradiente estocástico_ o SGD (por sus siglas en inglés).
 
 
 Sin entrar en mucho detalle para el algoritmo de optimización, ya que merece una entrada aparte, digamos que es un método que nos permite dada una función de error o coste, con una entrada $w$, encontrar el punto en el que se minimiza la función, es decir, donde el error (diferencia entre $y$ e $\hat{y}$) es mínimo.

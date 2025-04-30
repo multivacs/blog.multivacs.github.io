@@ -1,5 +1,5 @@
 ---
-title: Técnicas de análisis de datos
+title: Clasificación de géneros musicales con Machine Learning y Scikit-learn
 description: Uso de diferentes algoritmos de machine learning para clasificación, regresión y clustering en el dataset GTZAN para géneros musicales.
 author: mario
 date: 2025-04-30 18:30:00 +0100

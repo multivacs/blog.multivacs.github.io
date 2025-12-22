@@ -3,7 +3,7 @@ title: Cómo crear visualizaciones de mapas en Python con Folium
 description: Genera mapas interactivos personalizados con la librería Folium.
 author: mario
 date: 2025-01-12 22:30:00 +0100
-categories: [Tecnología y Programación, Visualización]
+categories: [Data Visualization]
 tags: [introducción, empezar, data science]
 pin: false
 math: false
@@ -105,8 +105,10 @@ m
 
 ```
 
-![](assets/img/posts/2025-01-12-crear-visualizaciones-folium/map1.png)
-_Mapa de Madrid con distritos_
+<figure>
+<img src="assets/img/posts/2025-01-12-crear-visualizaciones-folium/map1.png" alt="Figura 1. Mapa de Madrid con distritos">
+<figcaption>Figura 1. Mapa de Madrid con distritos</figcaption>
+</figure>
 
 
 ## 5. Añadir marcadores simples
@@ -121,8 +123,10 @@ folium.Marker(
 ).add_to(m)
 ```
 
-![](assets/img/posts/2025-01-12-crear-visualizaciones-folium/map2_marker.png)
-_Marker simple_
+<figure>
+<img src="assets/img/posts/2025-01-12-crear-visualizaciones-folium/map2_marker.png" alt="Figura 2. Marker simple">
+<figcaption>Figura 2. Marker simple</figcaption>
+</figure>
 
 
 ## 6. Agrupar marcadores en un clúster
@@ -147,8 +151,10 @@ cluster = MarkerCluster(locations=locations, popups=df["neighbourhood"].tolist()
 m.add_child(cluster)
 ```
 
-![](assets/img/posts/2025-01-12-crear-visualizaciones-folium/map3_cluster.png)
-_Mapa de clústers_
+<figure>
+<img src="assets/img/posts/2025-01-12-crear-visualizaciones-folium/map3_cluster.png" alt="Figura 3. Mapa de clústers">
+<figcaption>Figura 3. Mapa de clústers</figcaption>
+</figure>
 
 
 ## 7. Crear un mapa de calor
@@ -163,8 +169,10 @@ heat_data = list(zip(df.latitude, df.longitude))
 HeatMap(heat_data).add_to(m)
 ```
 
-![](assets/img/posts/2025-01-12-crear-visualizaciones-folium/map4_heatmap.png)
-_Mapa de calor_
+<figure>
+<img src="assets/img/posts/2025-01-12-crear-visualizaciones-folium/map4_heatmap.png" alt="Figura 4. Mapa de calor">
+<figcaption>Figura 4. Mapa de calor</figcaption>
+</figure>
 
 
 
@@ -176,7 +184,7 @@ Los datos se han obtenido directamente de la web de 'datos.gob.es', en:
 - [Alojamientos](https://datos.gob.es/en/catalogo/l01280796-alojamientos-de-la-ciudad-de-madrid-www-esmadrid-com)
 - [Restaurantes](https://datos.gob.es/en/catalogo/l01280796-restaurantes-con-perfil-turistico-de-la-ciudad-de-madrid-www-esmadrid-com)
 
-Dado que los datos se encuentran en XML, deberemos de parsearlos y transformarlos en datatables.  
+Dado que los datos se encuentran en XML, deberemos de parsearlos y transformarlos en dataframes.  
 El código podéis encontrarlo en [GitHub](https://github.com/multivacs/madrid-map-restauracion).
 
 

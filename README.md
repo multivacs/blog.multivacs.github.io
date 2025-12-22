@@ -1,4 +1,4 @@
-# Chirpy Jekyll Theme
+# Multivacs Blog ✍️
 ---
 
 A minimal, responsive, and feature-rich Jekyll theme for technical writing.

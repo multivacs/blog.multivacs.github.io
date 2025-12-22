@@ -3,7 +3,7 @@ title: Prediciendo el Riesgo de fuga de Empleados con Machine Learning
 description: Sistema que usando Machine Learning con algoritmos de árboles de decisión, calcula la probabilidad de que un empleado abandone la compañía.
 author: mario
 date: 2024-03-25 11:33:00 +0100
-categories: [Tecnología y Programación, Ciencia de datos]
+categories: [Data Science]
 tags: [machine learning, tableau, python, riesgo, predicción]
 pin: false
 math: false
@@ -45,11 +45,15 @@ Haciendo un análisis de cúal es el perfil medio que abandona la compañía vem
 - Salarios bajos
 - Realizan horas extra
 
-![Business Analytics Estudios](assets/img/posts/2024-03-25-riesgo-fuga-empleados/ba_1.png){: width="434" height="405" }
-_Figura 1: Abandonos por estudios_
+<figure>
+<img src="assets/img/posts/2024-03-25-riesgo-fuga-empleados/ba_1.png" alt="Figura 1. Abandonos por estudios">
+<figcaption>Figura 1. Abandonos por estudios</figcaption>
+</figure>
 
-![Business Analytics Puesto](assets/img/posts/2024-03-25-riesgo-fuga-empleados/ba_3.png){: width="434" height="483" }
-_Figura 2: Abandonos por puesto_
+<figure>
+<img src="assets/img/posts/2024-03-25-riesgo-fuga-empleados/ba_3.png" alt="Figura 2. Abandonos por puesto">
+<figcaption>Figura 2. Abandonos por puesto</figcaption>
+</figure>
 
 
 Con estos datos sobre la mesa, podemos preguntarnos cuál es ahorro esperado si aplicamos estrategias de retención sobre este primer perfil de riesgo que hemos identificado.
@@ -64,8 +68,10 @@ Tras identificar el problema y visualizar las posibles soluciones, decidimos imp
 Para este problema, utilizaremos los árboles de decisión debido a su interpretabilidad, que los hacen idóneos para poder comunicar de manera más fácil las posibles soluciones  aplicar, y cuál es la razón más probable por la que un empleado puede que renuncie.
 
 
-![Machine Learning Tree](assets/img/posts/2024-03-25-riesgo-fuga-empleados/ml.png){: width="972" height="589" }
-_Figura 3: Árbol de decisión_
+<figure>
+<img src="assets/img/posts/2024-03-25-riesgo-fuga-empleados/ml.png" alt="Figura 3. Árbol de decisión">
+<figcaption>Figura 3. Árbol de decisión</figcaption>
+</figure>
 
 
 
@@ -73,8 +79,10 @@ _Figura 3: Árbol de decisión_
 Finalmente, transformamos la salida de este algoritmo en un dashboard interactivo utilizando Tableau.
 Podéis consultar el resultado en el siguiente enlace [Dashboard Turnover Risk](https://public.tableau.com/views/DashboardRiesgoFuga/Dashboard1)
 
-![Producto Tableau](assets/img/posts/2024-03-25-riesgo-fuga-empleados/Dashboard.png){: width="972" height="589" }
-_Figura 4: Dashboard con Tableau_
+<figure>
+<img src="assets/img/posts/2024-03-25-riesgo-fuga-empleados/Dashboard.png" alt="Figura 4. Dashboard con Tableau">
+<figcaption>Figura 4. Dashboard con Tableau</figcaption>
+</figure>
 
 > El código fuente utilizado para este curso, es propiedad de [Data Science 4 Business](https://datascience4business.com/).
 {: .prompt-tip }

@@ -3,7 +3,7 @@ title: Predicción de TDAH con redes neuronales
 description: Estudio de arquitecturas de redes neuronales recientes para datos tabulares, y compararlos en el ámbito del diagnóstico de TDAH.
 author: mario
 date: 2024-02-25 11:33:00 +0100
-categories: [Tecnología y Programación, Redes Neuronales]
+categories: [Machine Learning]
 tags: [redes neuronales, python, keras, datos estructurados]
 pin: false
 math: true
@@ -45,8 +45,10 @@ Para el análisis comparativo, seleccioné varios modelos especializados en dato
 ### Dataset
 El dataset se compone de los resultados del test WISC-IV de varios niños, divididos en dos grupos: uno con diagnóstico de TDAH y otro grupo control. Estos resultados sirven como características de entrada para los modelos de predicción. Como características o _features_ utilizamos los índices: Full Scale Intelligence Quotient (FSIQ), Verbal Comprehension Index (VCI), Perceptive Reasoning Index (PRI), Working Memory Index (WMI), Processing Speed Index (PSI), General Ability Index (GAI), y Cognitive Processing Index (CPI). En la figura [Figura 1] podemos observar la diferencia entre el grupo control y el grupo clínico.
 
-![Figura 1](assets/img/posts/2024-02-25-prediccion-tdah-redes/dataset_dif.png){: w="700" h="400" }
-_Figura 1: Diferencias entre el Grupo Control y el Grupo Clínico_
+<figure>
+<img src="assets/img/posts/2024-02-25-prediccion-tdah-redes/dataset_dif.png" alt="Figura 1. Diferencias entre el Grupo Control y el Grupo Clínico">
+<figcaption>Figura 1. Diferencias entre el Grupo Control y el Grupo Clínico</figcaption>
+</figure>
 
 ### Preprocesado de los Datos
 Como preprocesado de datos, se realizó una serie de pasos simples para evitar introducir _bias_ en los modelos y asegurar que los datos puedan ser digeridos por los modelos:
@@ -59,8 +61,10 @@ Como preprocesado de datos, se realizó una serie de pasos simples para evitar i
 Para evaluar el rendimiento de los modelos, utilicé una validación cruzada de 10 pliegues. Este método asegura que los resultados sean consistentes y no dependan de una sola división del dataset.
 El proceso consiste en dividir el conjunto de datos en 10 partes o pliegues de tamaño aproximadamente igual. Luego, se realiza un proceso iterativo en el que el modelo1 se entrena y evalúa 10 veces, cada vez utilizando un pliegue diferente como conjunto de prueba y los restantes 9 como conjunto de entrenamiento, tal y como podemos ver en la [Figura 2]. De esta manera, se obtienen 10 estimaciones del rendimiento del modelo, que se pueden promediar para obtener una medida más robusta y generalizada de su desempeño.
 
-![Figura 2](assets/img/posts/2024-02-25-prediccion-tdah-redes/kfold.png){: w="700" h="400" }
-_Figura 2: 10 K-Fold Cross Validation_
+<figure>
+<img src="assets/img/posts/2024-02-25-prediccion-tdah-redes/kfold.png" alt="Figura 2. 10 K-Fold Cross Validation">
+<figcaption>Figura 2. 10 K-Fold Cross Validation</figcaption>
+</figure>
 
 Las métricas de rendimiento utilizadas fueron el precisión, AUC-ROC, sensibilidad y especificidad:
 - **Precisión:** La precisión es una métrica que evalúa la tasa de acierto. Se calcula dividiendo el número de aciertos entre el número de casos.

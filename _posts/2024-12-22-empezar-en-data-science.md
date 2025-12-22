@@ -3,7 +3,7 @@ title: ¿Cómo empezar en Data Science?
 description: Guía recomendada para aquellos interesados en el campo de Data Science y no saben por dónde empezar.
 author: mario
 date: 2024-12-22 20:30:00 +0100
-categories: [Tecnología y Programación, Ciencia de datos]
+categories: [Data Science]
 tags: [introducción, empezar, data science]
 pin: false
 math: false
@@ -36,7 +36,7 @@ Aunque todas las opciones son válidas, lo cierto es que este primer paso puede 
 
 Nadie dijo que el camino fuese a ser sencillo. Para poder convertirse en un buen científico de datos, es necesario tener cierta soltura en las operaciones matemáticas que vamos a utilizar.
 
-![Mates](assets/img/posts/2024-12-22-empezar-en-data-science/mates.jpg){: width="434" height="405" }
+<img src="assets/img/posts/2024-12-22-empezar-en-data-science/mates.jpg" alt="Matemáticas">
 
 Las matemáticas nos ayudan a:
 - extraer conclusiones a partir de los datos
@@ -80,7 +80,7 @@ El objetivo del modelo será asociar unos inputs a una salida esperada, y conseg
 Por otro lado, en el **aprendizaje no supervisado**, tenemos una serie de datos de los que no tenemos una variable objetivo sobre la que obtener un valor, sino que en su lugar nos permite descubrir patrones y tendencias dentro de los propios datos, sin tener claro de antemano qué estamos buscando.  
 Este concepto es menos intuitivo, pero pongamos que dirigimos una tienda de música, y tenemos datos de los clientes sobre discos comprados, encuestas, valoraciones, pero también datos como la edad, sexo, o si están casados o con hijos. Imaginemos ahora que nos gustaría clasificarlos en grupos para dirigir campañas de marketing sobre un grupo concreto para mejorar el impacto de la publicación. Pues con este tipo de modelos, únicamente deberíamos de indicarle los datos de entrada y él mismo se encargaría de hacer la división --a este tipo de problema se le llama **clustering  (agrupamiento)**--.
 
-![Mates](assets/img/posts/2024-12-22-empezar-en-data-science/ML.png){: width="434" height="405" }
+<img src="assets/img/posts/2024-12-22-empezar-en-data-science/ML.png" alt="Machine Learning">
 
 
 

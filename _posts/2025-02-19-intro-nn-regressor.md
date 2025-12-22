@@ -2,8 +2,8 @@
 title: Introducción a las Redes Neuronales Parte 1 - Regresión Binaria
 description: Aprenderemos qué es un regresor binario y cómo implementarlo en Python.
 author: mario
-date: 2025-01-19 22:30:00 +0100
-categories: [Tecnología y Programación, Redes Neuronales]
+date: 2025-02-19 22:30:00 +0100
+categories: [Artificial Intelligence]
 tags: [introducción, redes neuronales, intro nn, python, pytorch]
 pin: false
 math: true
@@ -43,8 +43,10 @@ El cómo aprende estos pesos lo veremos en el apartado 3.
 
 Para entender su intuición matemática, deberemos recordar que cualquier función lineal puede expresarse mediante la fórmula: $y = mx + b$; donde $m$ es la pendiente y $b$ el punto que pasa por el origen.
 
-![Figura 1](assets/img/posts/2025-02-19-intro-nn-regressor/figura_1_lineal.png)
-_Figura 1: Función lineal de Magister Mathematicae - Trabajo propio, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=34887966_
+<figure>
+<img src="assets/img/posts/2025-02-19-intro-nn-regressor/figura_1_lineal.png" alt="Figura 1. Función lineal de Magister Mathematicae">
+<figcaption>Figura 1. Función lineal de Magister Mathematicae - Trabajo propio, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=34887966</figcaption>
+</figure>
 
 Aquí el sumatorio hace referencia a que la operación $wx$ se trata del **producto escalar de ambos vectores**, es decir, la suma de los productos componente a componente.
 
@@ -74,8 +76,10 @@ El objetivo es aprender los parámetros $w$ y $b$ para obtener $\hat{y}$ (predic
 
 Sin entrar en mucho detalle para el algoritmo de optimización, ya que merece una entrada aparte, digamos que es un método que nos permite dada una función de error o coste, con una entrada $w$, encontrar el punto en el que se minimiza la función, es decir, donde el error (diferencia entre $y$ e $\hat{y}$) es mínimo.
 
-![Figura 2](assets/img/posts/2025-02-19-intro-nn-regressor/figura_2_sgd.png)
-_Figura 2: Algoritmo de optimización_
+<figure>
+<img src="assets/img/posts/2025-02-19-intro-nn-regressor/figura_2_sgd.png" alt="Figura 2. Algoritmo de optimización de la función de pérdida (en azul)">
+<figcaption>Figura 2. Algoritmo de optimización de la función de pérdida (en azul)</figcaption>
+</figure>
 
 
 ### 3.1 Función de pérdida (Entropía cruzada)
@@ -116,8 +120,10 @@ Enhorabuena, ya eres todo un experto en regresores logísticos, así que por qu�
 
 Para este ejemplo en Python, vamos a crear un regresor logístico sencillo que sea capaz de aprender a diferenciar entre dos clases (0 o 1), dado una entrada $x$. Usando todos los conceptos vistos más arriba.
 
-![Figura 3](assets/img/posts/2025-02-19-intro-nn-regressor/figura_3_hiperplano.png)
-_Figura 3: Visualización de la frontera de decisión_
+<figure>
+<img src="assets/img/posts/2025-02-19-intro-nn-regressor/figura_3_hiperplano.png" alt="Figura 3. Visualización de la frontera de decisión">
+<figcaption>Figura 3. Visualización de la frontera de decisión</figcaption>
+</figure>
 
 Se asume cierto conocimiento de Python y la librería pytorch para este ejemplo, aunque si estás muy verde en esto, no pasa nada, el notebook contiene anotaciones en texto para que puedas seguir la lógica del mismo.
 

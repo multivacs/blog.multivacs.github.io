@@ -1,5 +1,5 @@
 ---
-title: Introducción a las Redes Neuronales Parte 1 - Regresión Binaria
+title: Introducción a las Redes Neuronales - Parte 1 Regresión Binaria
 description: Aprenderemos qué es un regresor binario y cómo implementarlo en Python.
 author: mario
 date: 2025-02-19 22:30:00 +0100

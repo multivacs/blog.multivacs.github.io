@@ -43,19 +43,19 @@ Los modelos supervisados evaluados fueron:
 - **Árboles de decisión y Random Forest:** Buena interpretabilidad y precisión. Random Forest mejoró la estabilidad reduciendo el sobreajuste.
 
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2025-04-30-clasificar-musica/ranking-regresores.png" alt="Figura 1. Ranking de regresores">
 <figcaption>Figura 1. Ranking de regresores</figcaption>
 </figure>
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2025-04-30-clasificar-musica/ranking-clasificadores.png" alt="Figura 2. Ranking de clasificadores">
 <figcaption>Figura 2. Ranking de clasificadores</figcaption>
 </figure>
 
 Además, se evaluaron los modelos mediante *matrices de confusión*, *accuracy*, *F1-score* y validación cruzada.
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2025-04-30-clasificar-musica/confusion-clasificadores.png" alt="Figura 3. Matriz de confusion clasificadores">
 <figcaption>Figura 3. Matriz de confusion clasificadores</figcaption>
 </figure>
@@ -70,7 +70,7 @@ Para tareas de clustering, se aplicaron los siguientes métodos:
 - **K-Means:** Se utilizó para intentar agrupar las muestras sin etiquetas. Aunque no se alineó perfectamente con los géneros, mostró agrupaciones consistentes.
 - **PCA (Análisis de Componentes Principales):** Para reducción de dimensionalidad y visualización. Permitió proyectar los datos en 2D y observar agrupaciones por género.
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2025-04-30-clasificar-musica/clusters.png" alt="Figura 4. Visualización de clústers de k-means usando PCA">
 <figcaption>Figura 4. Visualización de clústers de k-means usando PCA</figcaption>
 </figure>

@@ -45,7 +45,7 @@ Para el análisis comparativo, seleccioné varios modelos especializados en dato
 ### Dataset
 El dataset se compone de los resultados del test WISC-IV de varios niños, divididos en dos grupos: uno con diagnóstico de TDAH y otro grupo control. Estos resultados sirven como características de entrada para los modelos de predicción. Como características o _features_ utilizamos los índices: Full Scale Intelligence Quotient (FSIQ), Verbal Comprehension Index (VCI), Perceptive Reasoning Index (PRI), Working Memory Index (WMI), Processing Speed Index (PSI), General Ability Index (GAI), y Cognitive Processing Index (CPI). En la figura [Figura 1] podemos observar la diferencia entre el grupo control y el grupo clínico.
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2024-02-25-prediccion-tdah-redes/dataset_dif.png" alt="Figura 1. Diferencias entre el Grupo Control y el Grupo Clínico">
 <figcaption>Figura 1. Diferencias entre el Grupo Control y el Grupo Clínico</figcaption>
 </figure>
@@ -61,7 +61,7 @@ Como preprocesado de datos, se realizó una serie de pasos simples para evitar i
 Para evaluar el rendimiento de los modelos, utilicé una validación cruzada de 10 pliegues. Este método asegura que los resultados sean consistentes y no dependan de una sola división del dataset.
 El proceso consiste en dividir el conjunto de datos en 10 partes o pliegues de tamaño aproximadamente igual. Luego, se realiza un proceso iterativo en el que el modelo1 se entrena y evalúa 10 veces, cada vez utilizando un pliegue diferente como conjunto de prueba y los restantes 9 como conjunto de entrenamiento, tal y como podemos ver en la [Figura 2]. De esta manera, se obtienen 10 estimaciones del rendimiento del modelo, que se pueden promediar para obtener una medida más robusta y generalizada de su desempeño.
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2024-02-25-prediccion-tdah-redes/kfold.png" alt="Figura 2. 10 K-Fold Cross Validation">
 <figcaption>Figura 2. 10 K-Fold Cross Validation</figcaption>
 </figure>

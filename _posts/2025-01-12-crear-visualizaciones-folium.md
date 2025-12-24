@@ -105,7 +105,7 @@ m
 
 ```
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2025-01-12-crear-visualizaciones-folium/map1.png" alt="Figura 1. Mapa de Madrid con distritos">
 <figcaption>Figura 1. Mapa de Madrid con distritos</figcaption>
 </figure>
@@ -123,7 +123,7 @@ folium.Marker(
 ).add_to(m)
 ```
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2025-01-12-crear-visualizaciones-folium/map2_marker.png" alt="Figura 2. Marker simple">
 <figcaption>Figura 2. Marker simple</figcaption>
 </figure>
@@ -151,7 +151,7 @@ cluster = MarkerCluster(locations=locations, popups=df["neighbourhood"].tolist()
 m.add_child(cluster)
 ```
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2025-01-12-crear-visualizaciones-folium/map3_cluster.png" alt="Figura 3. Mapa de clústers">
 <figcaption>Figura 3. Mapa de clústers</figcaption>
 </figure>
@@ -169,7 +169,7 @@ heat_data = list(zip(df.latitude, df.longitude))
 HeatMap(heat_data).add_to(m)
 ```
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2025-01-12-crear-visualizaciones-folium/map4_heatmap.png" alt="Figura 4. Mapa de calor">
 <figcaption>Figura 4. Mapa de calor</figcaption>
 </figure>

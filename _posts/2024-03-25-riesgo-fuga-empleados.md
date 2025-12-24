@@ -45,12 +45,12 @@ Haciendo un análisis de cúal es el perfil medio que abandona la compañía vem
 - Salarios bajos
 - Realizan horas extra
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2024-03-25-riesgo-fuga-empleados/ba_1.png" alt="Figura 1. Abandonos por estudios">
 <figcaption>Figura 1. Abandonos por estudios</figcaption>
 </figure>
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2024-03-25-riesgo-fuga-empleados/ba_3.png" alt="Figura 2. Abandonos por puesto">
 <figcaption>Figura 2. Abandonos por puesto</figcaption>
 </figure>
@@ -68,7 +68,7 @@ Tras identificar el problema y visualizar las posibles soluciones, decidimos imp
 Para este problema, utilizaremos los árboles de decisión debido a su interpretabilidad, que los hacen idóneos para poder comunicar de manera más fácil las posibles soluciones  aplicar, y cuál es la razón más probable por la que un empleado puede que renuncie.
 
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2024-03-25-riesgo-fuga-empleados/ml.png" alt="Figura 3. Árbol de decisión">
 <figcaption>Figura 3. Árbol de decisión</figcaption>
 </figure>
@@ -79,7 +79,7 @@ Para este problema, utilizaremos los árboles de decisión debido a su interpret
 Finalmente, transformamos la salida de este algoritmo en un dashboard interactivo utilizando Tableau.
 Podéis consultar el resultado en el siguiente enlace [Dashboard Turnover Risk](https://public.tableau.com/views/DashboardRiesgoFuga/Dashboard1)
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2024-03-25-riesgo-fuga-empleados/Dashboard.png" alt="Figura 4. Dashboard con Tableau">
 <figcaption>Figura 4. Dashboard con Tableau</figcaption>
 </figure>

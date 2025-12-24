@@ -45,7 +45,7 @@ El cómo aprende estos pesos lo veremos más adelante.
 
 Para entender su intuición matemática, deberemos recordar que cualquier función lineal puede expresarse mediante la fórmula: $y = mx + b$; donde $m$ es la pendiente y $b$ el punto que pasa por el origen.
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2025-02-19-intro-nn-regressor/figura_1_lineal.png" alt="Figura 1. Función lineal de Magister Mathematicae">
 <figcaption>Figura 1. Función lineal de Magister Mathematicae - Trabajo propio, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=34887966</figcaption>
 </figure>
@@ -79,7 +79,7 @@ El objetivo es aprender los parámetros $w$ y $b$ para obtener $\hat{y}$ (predic
 
 Sin entrar en mucho detalle para el algoritmo de optimización, ya que merece una entrada aparte, digamos que es un método que nos permite dada una función de error o coste, con una entrada $w$, encontrar el punto en el que se minimiza la función, es decir, donde el error (diferencia entre $y$ e $\hat{y}$) es mínimo.
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2025-02-19-intro-nn-regressor/figura_2_sgd.png" alt="Figura 2. Algoritmo de optimización de la función de pérdida (en azul)">
 <figcaption>Figura 2. Algoritmo de optimización de la función de pérdida (en azul)</figcaption>
 </figure>
@@ -122,7 +122,7 @@ Ahora que tenemos una idea de lo que son y cómo funcionan los regresores logís
 
 Para este ejemplo en Python, vamos a crear un regresor logístico sencillo que sea capaz de aprender a diferenciar entre dos clases (0 o 1), dado una entrada $x$. Usando todos los conceptos vistos más arriba.
 
-<figure>
+<figure style="text-align: center;">
 <img src="assets/img/posts/2025-02-19-intro-nn-regressor/figura_3_hiperplano.png" alt="Figura 3. Visualización de la frontera de decisión">
 <figcaption>Figura 3. Visualización de la frontera de decisión</figcaption>
 </figure>
